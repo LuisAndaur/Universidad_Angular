@@ -1,1 +1,13 @@
-<p>persona</p>
+<p>
+    Nombre: {{nombre}},
+    Apellido: {{apellido}},
+    edad: {{getEdad()}}
+</p>
+
+<!-- Interpolación dentro de las etiquetas de HTML
+     Repite lo que presionan las teclas -->
+<div (keyup)="0">
+    <label>Repetidor</label>
+    <input #entrada>
+    {{entrada.value}}
+</div>

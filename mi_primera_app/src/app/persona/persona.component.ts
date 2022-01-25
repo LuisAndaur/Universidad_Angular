@@ -5,8 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css']
 })
-export class PersonaComponent{
 
-  constructor() { }
+export class PersonaComponent{
+  nombre: string = "Juan";
+  apellido: string = "Perex";
+  private edad: number = 18;
+
+  getEdad():number{
+    return this.edad;
+  }
 
 }

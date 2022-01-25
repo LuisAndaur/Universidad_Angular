@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="fs-1">{{title}}</h1>
+  <div class="mb-3">
+    <label>Operando A</label>
+    <input type="number" class="form-control" [(ngModel)]="operandoA" />
+  </div>
+  <div class="mb-3">
+    <label>Operando B</label>
+    <input type="number" class="form-control" [(ngModel)]="operandoB" />
+  </div>
+  <div class="mb-3">
+    <button class="btn btn-primary mb-3" (click)="sumar()">Sumar</button>
+  </div>
+  <div class="mb-3">
+    <p class="fs-3">Resultado: {{ resultado }}</p>
+  </div>
+</div>
