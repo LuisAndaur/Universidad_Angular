@@ -1,0 +1,19 @@
+<form class="row">
+    <div class="form-group col-md-2">
+      <!-- <label class="sr-only" for="nombre" class="sr-only">Nombre</label> -->
+      <!-- TWO WAY BINDING
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="nombreInput"> -->
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" #nombreInput>
+    </div>
+    <div class="form-group col-md-2">
+      <!-- <label for="apellido" class="sr-only">Apellido</label> -->
+      <!-- TWO WAY BINDING
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="apellidoInput"> -->
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" #apellidoInput>
+    </div>
+    <div class="col-md-2">
+      <!-- REFERENCIAS LOCALES PASADAS POR PARAMETROS
+        <button type="submit" class="btn btn-primary" (click)="agregarPersona(nombreInput, apellidoInput)">Agregar</button> -->
+      <button type="submit" class="btn btn-primary" (click)="agregarPersona()">Agregar</button>
+    </div>
+  </form>
